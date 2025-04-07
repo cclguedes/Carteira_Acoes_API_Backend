@@ -1,35 +1,44 @@
-# Minha API
+# Carteira de Ações - Front-end
 
-Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
+Este projeto faz parte da minha avaliação na Pós-Graduação em Engenharia de Software da PUC-Rio. Trata-se de uma API RESTful desenvolvida em Flask para gerenciamento de uma carteira de ações. Permite registrar ações, calcular valorização e consultar informações atualizadas.
 
-O objetivo aqui é ilutsrar o conteúdo apresentado ao longo das três aulas da disciplina.
+Esta API pode ser gerenciada pelo frontend abaixo:
+https://github.com/cclguedes/Carteira_Acoes_API_Frontend
 
----
-## Como executar 
+## Funcionalidades
 
+- Listagem de ações cadastradas
+- Adição de novas ações
+- Remoção de ações
+- Cálculo automático:
+  - Valor atual da ação (via lógica backend)
+  - Valor total investido
+  - Valorização percentual desde a compra
 
-Será necessário ter todas as libs python listadas no `requirements.txt` instaladas.
-Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo.
+## Tecnologias utilizadas
 
-> É fortemente indicado o uso de ambientes virtuais do tipo [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html).
+- [Flask](https://flask.palletsprojects.com/)
+- [Flask-OpenAPI3](https://pypi.org/project/flask-openapi3/)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
+- [Pydantic](https://docs.pydantic.dev/)
+- [SQLite](https://www.sqlite.org/)
 
-```
-(env)$ pip install -r requirements.txt
-```
+## Instalação
 
-Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
+```bash
+# Clone o repositório
+git clone https://github.com/cclguedes/Carteira_Acoes_API_Backend
 
-Para executar a API  basta executar:
+# Entre na pasta do projeto
+cd carteira_acoes_api_backend
 
-```
-(env)$ flask run --host 0.0.0.0 --port 5000
-```
+# Crie e ative um ambiente virtual (opcional, mas recomendado)
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
 
-Em modo de desenvolvimento é recomendado executar utilizando o parâmetro reload, que reiniciará o servidor
-automaticamente após uma mudança no código fonte. 
+# Instale as dependências
+pip install -r requirements.txt
 
-```
-(env)$ flask run --host 0.0.0.0 --port 5000 --reload
-```
-
-Abra o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador para verificar o status da API em execução.
+# Rode o servidor
+python app.py
