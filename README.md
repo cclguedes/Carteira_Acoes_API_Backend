@@ -25,19 +25,29 @@ https://github.com/cclguedes/Carteira_Acoes_API_Frontend
 
 ## Instalação
 
-# Clone o repositório
+Clone o repositório
+```bash
 git clone https://github.com/cclguedes/Carteira_Acoes_API_Backend
-
-# Entre na pasta do projeto
+```
+Entre na pasta do projeto
+```bash
 cd carteira_acoes_api_backend
-
-# Crie e ative um ambiente virtual (opcional, mas recomendado)
+```
+Crie e ative um ambiente virtual (opcional, mas recomendado)
+```bash
 python -m venv venv
+```
+```bash
 source venv/bin/activate  # Linux/macOS
+```
+```bash
 venv\Scripts\activate     # Windows
-
-# Instale as dependências
+```
+Instale as dependências
+```bash
 pip install -r requirements.txt
-
-# Rode o servidor
+```
+Rode o servidor
+```bash
 python app.py
+```
