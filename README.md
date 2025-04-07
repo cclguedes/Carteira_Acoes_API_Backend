@@ -43,10 +43,6 @@ source venv/bin/activate # Linux/macOS
 ```bash
 venv\Scripts\activate # Windows
 ```
-Entre na pasta:
-```bash
-cd carteira_acoes_api_backend
-```
 Instale as dependências:
 ```bash
 pip install -r requirements.txt
