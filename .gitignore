@@ -1,12 +1,3 @@
+# Ignorar arquivos de cache do Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.pyc
-/__pycache__
-model/__pycache__/__init__.cpython-313.pyc
-model/__pycache__/acao.cpython-313.pyc
-model/__pycache__/base.cpython-313.pyc
-schemas/__pycache__/__init__.cpython-313.pyc
-schemas/__pycache__/acao.cpython-313.pyc
-schemas/__pycache__/error.cpython-313.pyc
