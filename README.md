@@ -2,7 +2,7 @@
 
 Este projeto faz parte da minha avaliação na Pós-Graduação em Engenharia de Software da PUC-Rio. Trata-se de uma API RESTful desenvolvida em Flask para gerenciamento de uma carteira de ações. Permite registrar ações, calcular valorização e consultar informações atualizadas.
 
-Esta API pode ser gerenciada pelo frontend abaixo:
+Esta API pode ser gerenciada pelo front-end abaixo:
 https://github.com/cclguedes/Carteira_Acoes_API_Frontend
 
 ## Funcionalidades
@@ -11,7 +11,7 @@ https://github.com/cclguedes/Carteira_Acoes_API_Frontend
 - Adição de novas ações
 - Remoção de ações
 - Cálculo automático:
-  - Valor atual da ação (via lógica backend)
+  - Valor atual da ação (via lógica back-end)
   - Valor total investido
   - Valorização percentual desde a compra
 
@@ -23,7 +23,7 @@ https://github.com/cclguedes/Carteira_Acoes_API_Frontend
 - [Pydantic](https://docs.pydantic.dev/)
 - [SQLite](https://www.sqlite.org/)
 
-## Instalação
+## Instalação e execução
 
 Clone o repositório:
 ```bash
