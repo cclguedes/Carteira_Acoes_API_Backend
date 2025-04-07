@@ -25,7 +25,6 @@ https://github.com/cclguedes/Carteira_Acoes_API_Frontend
 
 ## Instalação
 
-```bash
 # Clone o repositório
 git clone https://github.com/cclguedes/Carteira_Acoes_API_Backend
 
