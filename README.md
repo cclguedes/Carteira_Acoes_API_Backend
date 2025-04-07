@@ -47,7 +47,10 @@ Instale as dependências:
 ```bash
 pip install -r requirements.txt
 ```
-Rode o servidor:
+Execute o servidor:
 ```bash
-python app.py
+flask run --host 0.0.0.0 --port 5000
 ```
+## Sobre o autor
+
+Sou Caio Guedes, engenheiro eletricista e especialista em gestão de projetos, trabalhando atualmente como Product Owner de projetos de tecnologia na indústria audiovisual. No momento, busco conhecimento mais profundo em arquitetura de softwares e desenvolvimento de sistemas para o aprimoramento das minhas atividades na gestão de projetos ágeis.
