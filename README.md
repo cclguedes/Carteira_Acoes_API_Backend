@@ -2,8 +2,7 @@
 
 Este projeto faz parte da minha avaliação na Pós-Graduação em Engenharia de Software da PUC-Rio. Trata-se de uma API RESTful desenvolvida em Flask para gerenciamento de uma carteira de ações. Permite registrar ações, calcular valorização e consultar informações atualizadas.
 
-Esta API pode ser gerenciada pelo front-end abaixo:
-https://github.com/cclguedes/Carteira_Acoes_API_Frontend
+Esta API pode ser gerenciada pelo seguinte front-end: https://github.com/cclguedes/Carteira_Acoes_API_Frontend
 
 ## Funcionalidades
 
@@ -11,7 +10,7 @@ https://github.com/cclguedes/Carteira_Acoes_API_Frontend
 - Adição de novas ações
 - Remoção de ações
 - Cálculo automático:
-  - Valor atual da ação (via lógica back-end)
+  - Valor atual da ação
   - Valor total investido
   - Valorização percentual desde a compra
 
@@ -53,5 +52,4 @@ flask run --host 0.0.0.0 --port 5000
 ```
 ## Sobre o autor
 
-Sou Caio Guedes, engenheiro eletricista e especialista em gestão de projetos, trabalhando atualmente como Product Owner de projetos de tecnologia na indústria audiovisual.
-https://www.linkedin.com/in/cclguedes/
+Sou Caio Guedes, engenheiro eletricista e especialista em gestão de projetos, trabalhando atualmente como Product Owner de projetos de tecnologia na indústria audiovisual. https://www.linkedin.com/in/cclguedes/
