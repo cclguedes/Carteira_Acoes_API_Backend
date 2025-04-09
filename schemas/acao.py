@@ -3,24 +3,18 @@ from typing import List
 from model.acao import Acao
 import requests
 
-class AcaoSchema(BaseModel):
-    """ Define como uma nova ação a ser inserida deve ser representada """
+class AcaoSchema(BaseModel):  # Define como uma nova ação a ser inserida deve ser representada.
     ticker: str = "VALE3"
     qtd: int = 10
     valor: float = 58.50
 
-
-class AcaoBuscaSchema(BaseModel):
-    """ Define como deve ser a estrutura para busca por ticker """
+class AcaoBuscaSchema(BaseModel):  # Define como deve ser a estrutura para busca por ticker.
     ticker: str = "VALE3"
 
-
-class ListagemAcoesSchema(BaseModel):
-    """ Define como uma listagem de ações será retornada """
+class ListagemAcoesSchema(BaseModel):  # Define como uma listagem de ações será retornada.
     acoes: List[AcaoSchema]
 
-
-def busca_valor_atual(ticker: str) -> float:
+def busca_valor_atual(ticker: str) -> float:  # Consulta o valor atual de uma ação pelo ticker usando uma API externa.
     try:
         response = requests.get(f"https://ledev.com.br/api/cotacoes/{ticker}")
         if response.status_code == 200:
@@ -32,8 +26,7 @@ def busca_valor_atual(ticker: str) -> float:
         print(f"[ERRO] Falha ao buscar valor atual de {ticker}: {e}")
     return 0.0
 
-
-def apresenta_acoes(acoes: List[Acao]):
+def apresenta_acoes(acoes: List[Acao]):  # Retorna uma representação serializada de múltiplas ações com informações calculadas.
     result = []
     for acao in acoes:
         valor_atual = busca_valor_atual(acao.ticker)
@@ -52,8 +45,7 @@ def apresenta_acoes(acoes: List[Acao]):
         })
     return {"acoes": result}
 
-
-def apresenta_acao(acao: Acao):
+def apresenta_acao(acao: Acao):  # Retorna uma representação serializada de uma ação com informações calculadas.
     valor_atual = busca_valor_atual(acao.ticker)
     valor_total = valor_atual * acao.qtd
     if acao.valor != 0:
@@ -71,9 +63,7 @@ def apresenta_acao(acao: Acao):
         "valorizacao": valorizacao
     }
 
-
-class AcaoViewSchema(BaseModel):
-    """ Define como uma ação será retornada individualmente """
+class AcaoViewSchema(BaseModel):  # Define como uma ação será retornada individualmente.
     id: int = 1
     ticker: str = "VALE3"
     qtd: int = 10
@@ -82,8 +72,6 @@ class AcaoViewSchema(BaseModel):
     valor_total: float = 526.80
     valorizacao: float = -9.96
 
-
-class AcaoDelSchema(BaseModel):
-    """ Define como será o retorno da remoção de uma ação """
-    mesage: str
+class AcaoDelSchema(BaseModel):  # Define como será o retorno da remoção de uma ação.
+    message: str
     ticker: str

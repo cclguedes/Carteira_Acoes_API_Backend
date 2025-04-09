@@ -1,7 +1,4 @@
 from pydantic import BaseModel
 
-
-class ErrorSchema(BaseModel):
-    """ Define como uma mensagem de eero será representada
-    """
-    mesage: str
+class ErrorSchema(BaseModel):  # Define como uma mensagem de eero será representada.
+    message: str

@@ -1,5 +1,3 @@
-#meucódigo
-
 from schemas.acao import AcaoSchema, AcaoBuscaSchema, AcaoViewSchema, \
                          ListagemAcoesSchema, AcaoDelSchema, apresenta_acoes, \
                          apresenta_acao
