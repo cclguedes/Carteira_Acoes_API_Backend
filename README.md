@@ -54,3 +54,4 @@ flask run --host 0.0.0.0 --port 5000
 ## Sobre o autor
 
 Sou Caio Guedes, engenheiro eletricista e especialista em gestão de projetos, trabalhando atualmente como Product Owner de projetos de tecnologia na indústria audiovisual.
+https://www.linkedin.com/in/cclguedes/
